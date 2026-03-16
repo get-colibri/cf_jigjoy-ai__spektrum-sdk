@@ -2,7 +2,8 @@
 
 **From idea to deployed app in 4 lines of code.**
 
-Spektrum is a Vibe Coding SDK that transforms natural language descriptions into fully functional, deployed web applications. Just describe what you want — Spektrum handles the rest.
+Spektrum is a Vibe Coding SDK that transforms natural language descriptions into fully functional, deployed web applications. Just describe what you want and Spektrum handles the rest.
+
 
 ```typescript
 const project = await spektrum.createProject("finance-dashboard")
@@ -18,6 +19,7 @@ Check out our **[working example repository](https://github.com/jigjoy-ai/spektr
 <img width="1363" height="774" alt="Screenshot from 2026-03-07 16-55-22" src="https://github.com/user-attachments/assets/561c7496-f157-420b-bf57-65afd0f598ca" />
 
 ## Installation
+
 
 ```bash
 npm install @spektrum-ai/sdk
@@ -35,11 +37,13 @@ Sign up at the [JigJoy Platform](https://jigjoy.ai/spektrum) to get your API key
 
 Create a `.env` file:
 
+
 ```bash
 SPEKTRUM_API_KEY=your_api_key_here
 ```
 
 ### 3. Build Something Amazing
+
 
 ```typescript
 import { SpektrumSDK } from "@spektrum-ai/sdk"
@@ -82,6 +86,7 @@ Every task you run via the SDK can be monitored in real-time on the [JigJoy Plat
 
 Creates a new project.
 
+
 ```typescript
 const { project } = await spektrum.createProject("my-project")
 // project.id → "proj_abc123"
@@ -90,6 +95,7 @@ const { project } = await spektrum.createProject("my-project")
 ### `createTask(projectId, title, description)`
 
 Creates a task describing what to build. Be as detailed as you want — the more context, the better the result.
+
 
 ```typescript
 const { task } = await spektrum.createTask(
@@ -103,6 +109,7 @@ const { task } = await spektrum.createTask(
 
 Triggers AI code generation and deployment. This is where the magic happens.
 
+
 ```typescript
 await spektrum.codeAndDeploy(task)
 ```
@@ -110,6 +117,7 @@ await spektrum.codeAndDeploy(task)
 ### `getAppUrl(projectId)`
 
 Returns the public URL of your deployed application.
+
 
 ```typescript
 const url = await spektrum.getAppUrl(project.id)
@@ -119,6 +127,7 @@ const url = await spektrum.getAppUrl(project.id)
 ### `leaveComment(taskId, commentText, authorId)`
 
 Add feedback or request changes to an existing task. Then call `codeAndDeploy` again to apply them.
+
 
 ```typescript
 const { task: updatedTask } = await spektrum.leaveComment(task.id, "Add dark mode support", "user-123")
