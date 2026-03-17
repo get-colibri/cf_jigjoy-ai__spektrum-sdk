@@ -6,7 +6,7 @@ Spektrum is a Vibe Coding SDK that transforms natural language descriptions into
 
 
 ```typescript
-const project = await spektrum.createProject("finance-dashboard")
+sconst project = await spektrum.createProject("finance-dashboard")
 const task = await spektrum.createTask(project.id, "Build a finance dashboard with portfolio charts")
 await spektrum.codeAndDeploy(task)
 const url = await spektrum.getAppUrl(project.id) // Your app is live! 🚀
@@ -18,7 +18,7 @@ Check out our **[working example repository](https://github.com/jigjoy-ai/spektr
 
 <img width="1363" height="774" alt="Screenshot from 2026-03-07 16-55-22" src="https://github.com/user-attachments/assets/561c7496-f157-420b-bf57-65afd0f598ca" />
 
-## Installation 
+## Installation
 
 
 ```bash
