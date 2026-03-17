@@ -14,11 +14,11 @@ const url = await spektrum.getAppUrl(project.id) // Your app is live! 🚀
 
 ## See It In Action
 
-Check out our **[working example repository](https://github.com/jigjoy-ai/spektrum-sdk-example)**** ** clone it, add your API key, and deploy your first AI-generated app in under a minute.
+Check out our **[working example repository](https://github.com/jigjoy-ai/spektrum-sdk-example)** clone it, add your API key, and deploy your first AI-generated app in under a minute.
 
 <img width="1363" height="774" alt="Screenshot from 2026-03-07 16-55-22" src="https://github.com/user-attachments/assets/561c7496-f157-420b-bf57-65afd0f598ca" />
 
-## Installation
+## Installation 
 
 
 ```bash
